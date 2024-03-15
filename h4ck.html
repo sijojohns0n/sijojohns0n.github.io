@@ -1,110 +1,67 @@
 <!DOCTYPE html>
-<html lang="en" class="no-js" >
+<html lang="en">
 <head>
-
-    <!--- basic page needs
-    ================================================== -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>H4CKiT - SIJO JOHNSON</title>
-
-    <script>
-        document.documentElement.classList.remove('no-js');
-        document.documentElement.classList.add('js');
-    </script>
-
-    <!-- CSS
-    ================================================== -->
-    <link rel="stylesheet" href="css/vendor.css">
-    <link rel="stylesheet" href="css/styles.css">
-
-    <!-- favicons
-    ================================================== -->
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-    <link rel="manifest" href="site.webmanifest">
-
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>H4CKiT</title>
+<style>
+    body {
+        font-family: monospace;
+        background-color: #000;
+        color: #fff;
+        margin: 0;
+        padding: 0;
+    }
+    .terminal {
+        width: 80%;
+        max-width: 800px;
+        margin: 50px auto;
+        border: 2px solid #666;
+        border-radius: 5px;
+        overflow: hidden;
+    }
+    .terminal-header {
+        background-color: #333;
+        padding: 10px;
+    }
+    .terminal-body {
+        padding: 10px;
+        height: 300px; /* Adjust height as needed */
+        overflow-y: auto;
+        background-color: #000;
+    }
+    .terminal-footer {
+        background-color: #333;
+        padding: 10px;
+    }
+    .command {
+        color: #0f0;
+    }
+    .output {
+        color: #fff;
+    }
+</style>
 </head>
-
-
-<body id="top">
-
-
-    <!-- preloader
-    ================================================== -->
-    <div id="preloader">
-        <div id="loader" class="dots-fade">
-            <div></div>
-            <div></div>
-            <div></div>
+<body>
+    <div class="terminal">
+        <div class="terminal-header">
+            H4CKiT
+        </div>
+        <div class="terminal-body" id="terminal-body">
+<div class="command">root@sijojohnson</span>:~$ ./H4CKiT.sh </div>
+            <div class="output">YOU ARE HIJACKED BY TEAM H4CKiT!</div>
+       </div>
+        <div class="terminal-footer">
+            <div class="output">copyright © sijo johnson</div>
         </div>
     </div>
-
-
-    <!-- page wrap
-    ================================================== -->
-    <div id="page" class="s-pagewrap">
-
-
-        <!-- # site header 
-        ================================================== -->
-        <header class="s-header">
-
-            <div class="row s-header__inner width-sixteen-col">
-
-                <div class="s-header__block">
-                    <div class="s-header__logo">
-                        <a class="logo" href="index.html">
-                            <img src="images/logo.png" alt="Homepage">
-                        </a>
-                    </div>
-
-                    <a class="s-header__menu-toggle" href="#0"><span>Menu</span></a>
-                </div> <!-- end s-header__block -->
-
-                <nav class="s-header__nav">
-    
-                    <ul class="s-header__menu-links">
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="certifications.html">Certifications</a></li>
-                        <li><a href="halloffame.html">Hall Of Fame</a></li>
-                        <li><a href="gallery.html">Gallery</a></li>
-                    </ul> <!-- s-header__menu-links -->
-    
-                </nav> <!-- end s-header__nav -->
-
-            </div> <!-- end s-header__inner -->
-
-        </header> <!-- end s-header -->
-
-
-        <!-- # site main content
-        ================================================== -->
-        <article id="content" class="s-content entry">
-
-            <div class="s-pageheader entry__header">
-                <div class="row">
-                    <div class="column xl-12">
-
-                        <h1 class="entry__title">
-                           TEAM H4CKiT
-                        </h1> <!-- end entry__title -->
-
-                        <div class="entry__meta">
-                            <div class="entry__meta-date">
-                                <svg width="24" height="24" fill="none" viewBox="0 0 24 24">
-                                    <circle cx="12" cy="12" r="7.25" stroke="currentColor" stroke-width="1.5"></circle>
-                                    <path stroke="currentColor" stroke-width="1.5" d="M12 8V12L14 14"></path>
-                                </svg>
-                                THIS SITE IS HIJACKED BY TEAM H4CKiT
-                            </div>
-                        </div> <!-- end entry__meta -->
-
-    <!-- Java Script
-    ================================================== -->
-    <script src="js/plugins.js"></script>
-    <script src="js/main.js"></script>
-
+    <script>
+        // Function to set custom word in the terminal footer
+        function setCustomWord(word) {
+            document.getElementById('custom-word').textContent = word;
+        }
+        
+        // Example usage: setCustomWord("Hello");
+    </script>
 </body>
 </html>
