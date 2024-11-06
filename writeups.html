@@ -155,7 +155,7 @@
     <script>
         async function loadBlogPosts() {
             const blogContainer = document.getElementById('blog-container');
-            const blogFiles = Array.from({ length: 1000 }, (_, i) => `${i + 1}.writeup`); // List of .writeup files
+            const blogFiles = Array.from({ length: 10 }, (_, i) => `${i + 1}.writeup`); // List of .writeup files
             const reversedBlogFiles = blogFiles.reverse(); // Reverse the list to display the newest first
     
             for (const file of reversedBlogFiles) {
